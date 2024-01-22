@@ -1,27 +1,28 @@
 <script setup>
-import Logo from './assets/svg/logo.svg'
-import More from './assets/svg/Navbar/bx_bx-menu-alt-right.svg'
+import Logo from "./assets/svg/logo.svg";
+import More from "./assets/svg/Navbar/bx_bx-menu-alt-right.svg";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
- <div class="grid grid-cols-2 p-5 md:grid-cols-3">
-<Logo/>
-<div class="hidden md:flex text-white p-5 gap-6 lg:gap-20 ">
-<button>Home</button>
-<button>Product</button>
-<button>About</button>
-<button>Contact</button>
-</div>
-<div class="p-5 col-span-1 flex justify-between items-center lg:justify-end ">
-  <button class="text-white border-solid border-2 p-8 w-36 flex items-center justify-center h-4 ">
-   Login
-  </button>
-  <button class="md:hidden ml-5">
-    <More/>
-  </button>
-</div>
+  <Navbar />
+  <div class="grid grid-row-4 justify-items-center ">
+    <div class="row-span-2 ">
+      <p class="text-5xl w-1/2  text-center mx-auto">Work at the speed of thought.</p>
+    <p class="px-7 py-5">
+      Most calendars are designed for teams. Slate is designed for freelancers
+      who want a simple way to plan their schedule.
+    </p>
 
- </div>
+    </div>
+  
+    <div class="row-span-2">
+      <button>
+        Try For Free
+      </button>
+      <button>Learn More</button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
