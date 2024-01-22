@@ -1,0 +1,54 @@
+<script setup>
+import Logo from './assets/svg/logo.svg'
+import More from './assets/svg/Navbar/bx_bx-menu-alt-right.svg'
+</script>
+
+<template>
+ <div class="grid grid-cols-2 p-5 md:grid-cols-3">
+<Logo/>
+<div class="hidden md:flex text-white p-5 gap-6 lg:gap-20 ">
+<button>Home</button>
+<button>Product</button>
+<button>About</button>
+<button>Contact</button>
+</div>
+<div class="p-5 col-span-1 flex justify-between items-center lg:justify-end ">
+  <button class="text-white border-solid border-2 p-8 w-36 flex items-center justify-center h-4 ">
+   Login
+  </button>
+  <button class="md:hidden ml-5">
+    <More/>
+  </button>
+</div>
+
+ </div>
+</template>
+
+<style scoped>
+header {
+  line-height: 1.5;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+</style>
