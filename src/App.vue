@@ -35,12 +35,69 @@ import LgScreen from "./assets/svg/Landing/screen-lg.svg";
             );
           "
         />
-        
-        <img src="./assets/svg/Landing/screen-lg.png" class="hidden lg:block pt-8" alt="screens">
-      
+
+        <img
+          src="./assets/svg/Landing/screen-lg.png"
+          class="hidden lg:block pt-8"
+          alt="screens"
+        />
       </div>
     </div>
   </div>
+  <section>
+    <div class="grid grid-cols-6 justify-items-center">
+      <p class="col-span-6 text-4xl font-light pt-3">FEATURES</p>
+      <p class="col-span-6 text-center w-1/2 pt-3">
+        Most calendars are designed for teams. Slate is designed for freelancers
+        who want a simple way to plan their schedule.
+      </p>
+      <img
+        src="./assets/section/bot.png"
+        alt="dashboard"
+        class="col-span-6 justify-items-center p-10"
+      />
+
+      <div class="col-span-6 justify-items-center">
+        <div class="grid justify-items-center">
+          <div class="flex gap-4">
+            <img
+              src="./assets/icons/Vector.jpg"
+              alt=""
+              class="flex-initial pt-1"
+            />
+            <p class="text-2xl flex-initial">A single source of truth</p>
+          </div>
+          <p class="w-1/2 pt-4">
+            When you add work to your Slate calendar we automatically calculate
+            useful insights
+          </p>
+        </div>
+        <div class="grid justify-items-center pt-16">
+          <div class="flex gap-4">
+            <img
+              src="./assets/icons/Vector.jpg"
+              alt=""
+              class="flex-initial pt-1"
+            />
+            <p class="text-2xl flex-initial">A single source of truth</p>
+          </div>
+          <p class="w-1/2 pt-4">
+            When you add work to your Slate calendar we automatically calculate
+            useful insights
+          </p>
+        </div>
+      </div>
+      <div class="col-start-3 justify-center col-span-2">
+        <div class="flex justify-center flex-col pt-7 w-full">
+          <p class="text-3xl m-auto">Contents</p>
+          <p class="text-center tracking-normal pt-6">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
